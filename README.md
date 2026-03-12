@@ -1,19 +1,33 @@
-<h1><strong>Ecompare🚀</strong></h1>
+# Ecompare – Product Price Comparison Platform
 
+Ecompare is a Django-based web application that compares product prices
+from multiple e-commerce websites using web scraping.
 
-<h3 style="margin-bottom:20px;">
-Ecompare. A product price comparison website using web scraping
-implemented in Django framework✨. 
-Scraping data from Amazon and Flipkart websites. 
-Users can compare the price of similar products online.
-</h3>
+The application extracts product information from Amazon and Flipkart
+and displays the results so users can easily compare prices.
 
+## Features
+- Product price comparison
+- Web scraping using BeautifulSoup
+- Django backend
+- Amazon and Flipkart data extraction
+- Simple product search interface
 
-### Libraries Used:-
+## Tech Stack
+- Python
+- Django
 - BeautifulSoup
-- requests
+- Requests
+- HTML / CSS / JavaScript
 
+## How It Works
+1. User searches for a product.
+2. The backend scrapes data from supported e-commerce websites.
+3. Results are processed and displayed for comparison.
 
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-
+## Future Improvements
+- Add more e-commerce sources
+- Improve UI
+- Add product filters
+- Add database storage for product history
 
