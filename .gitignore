@@ -1,0 +1,7 @@
+.vscode
+screenshots/
+PC/__pycache__/
+price/__pycache__/
+.env
+*.py[cod]
+staticfiles/

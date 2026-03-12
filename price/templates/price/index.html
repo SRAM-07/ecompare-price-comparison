@@ -1,0 +1,96 @@
+{% extends 'price/base.html' %} {% load static %} {% block content %}
+
+<section class="container-section">
+  <nav class="navbar-section">
+    <a href="#">
+      <h1><img src="{% static 'images/cart2.png' %}" />Rcompare</h1></a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    ></button>
+    <ul class="nav-menu">
+      <li class="nav-item" aria-current="page">
+        <a class="nav-link menu-item .current-menu-item" href="#home"
+          ><i class="bi bi-house-fill"></i>HOME</a
+        >
+      </li>
+      <div class="wee"></div>
+      <li class="nav-item">
+        <a class="nav-link menu-item" href="#contact"
+          ><i class="bi bi-person-fill"></i>ABOUT</a
+        >
+      </li>
+    </ul>
+
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <div class="Home-section" id="home">
+    <div class="btn-form">
+      <h2>
+        You want lower prices, <br />
+        we hear you
+      </h2>
+      <form action="/next" method="GET" style="margin-top: 50px">
+        <input
+          class="btn-input px-3"
+          type="text"
+          name="text"
+          placeholder="Enter Product Name"
+        />
+        <button class="btn-search" href="">Search</button>
+      </form>
+    </div>
+    <div class="back-img">
+      <img src="{%static '/images/home.svg' %}" />
+    </div>
+  </div>
+</section>
+
+<footer id="contact" class="container-fluid size_footer about-section">
+  <div class="row py-5">
+    <div class="col-12 align-items-center justify-content-center mb-5">
+      <h2>About us</h2>
+      <h4><a href="#">Sriram M</a></h4>
+      <h4>
+        <a href="https://www.linkedin.com/in/sriram-m-890b22215/" target="_blank"
+          >Atharv Ingole
+        </a>
+      </h4>
+      <h4>
+        <a href="https://www.linkedin.com/in/shr25/" target="_blank"
+          >Shreyash Asawa</a
+        >
+      </h4>
+      <h4>
+        <a href="https://www.linkedin.com/in/sanskarsharma100/" target="_blank"
+          >Sanskar Sharma</a
+        >
+      </h4>
+    </div>
+    <div class="col-12 align-items-center justify-content-center">
+      <div class="d-flex justify-content-end">
+        <a href="#"><i class="bi bi-arrow-up-circle-fill"></i></a>
+      </div>
+      <hr />
+      <p class="lead">
+        <strong
+          >Copyright &copy; 2024 Rcompare🚀 | Made with 🧡 for the people of the
+          internet</strong
+        >
+      </p>
+    </div>
+  </div>
+</footer>
+
+{% endblock content %}
